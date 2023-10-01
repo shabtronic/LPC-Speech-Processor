@@ -1,15 +1,17 @@
 # LPC-Speech-Processor
 LPC algorithm in JSFX
 
+Linear Predictive Coding
+
 I recently bought a PO-35 speak - and it's soooo much fun, I decided to investigate how it processes it's speech.
 
 I found a video with the developer:
 
 [PO-35 Developer video](https://www.youtube.com/watch?v=D730KX75kHk&list=WL&index=1)
 
-and it turns out - they used LPC to record and compress the audio - and then fiddle with the resynthesis (fundemental OSC and formats) to get all the great whacky effect.
+and it turns out - they used LPC to record and compress the audio - and then fiddle with the resynthesis (fundemental OSC and formats) to get all the great whacky effects.
 
-so I decided to write my own in reaper - just for fun!
+so I decided to write my own in Reaper JSFX - just for fun!
 
 LPC is one of those damn "Skeleton" algorithms - i.e. not much info on the core parts of the alogrithm. So I spent a few days researching and came up with the following:
 
@@ -41,4 +43,4 @@ if it's voiced speech:
 if it's noise:
 
 
-Because you now have the audio stored as a set of pitches and filter coeffcients - you can easily change the pitch and the formants for fun stuff. You can also "AUTOTUNE" the pitches so they match actual note frequencies e.t.c.
+Because you now have the audio stored as a set of pitches and filter coeffcients - you can easily change the pitch and the formants for fun stuff. You can also "AUTOTUNE" the pitches so they match actual note frequencies e.t.c. You can also time-strech without changing the pitch.
