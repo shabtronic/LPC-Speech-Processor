@@ -16,6 +16,7 @@ so I decided to write my own in Reaper JSFX - just for fun!
 LPC is one of those damn "Skeleton" algorithms - i.e. the implementation details of the various part of the algorithms are not explained in detail. So I spent a few days researching and came up with the following:
 
 Sources found:
+
 [Skantar LPC Source code](https://github.com/SKantar/LPC/blob/master/LPC/LPC/main.cpp)
 
 [Arduino talkie playback lib](https://github.com/ArminJo/Talkie/tree/master/src)
