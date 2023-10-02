@@ -20,16 +20,17 @@ Encoding:
 1) Decide how many filter co-effcients you want to use - the higher the better (11 is pretty good)
 2) Split the audio into overlapping frames, around 13 ms in size is pretty good
 3) Apply a raised cosine window to the frame audio (hann/hanning)
-4) Decide if the frame is voiced speeh or noise
+4) Decide if the frame is voiced speech or noise
 
 if it's voiced speech:
 
-6) Calc the autocorrecation values for the frame audio
+6) Calc the autocorrelation values for the frame audio
 7) Calc the mean of the frame audio
 8) Calc the deviation of the frame audio
 9) Calc the filter coeffcients of the frame audio
 10) Apply a inverse filter to the frame audio to remove any formats
 11) Calc the pitch of the frame audio
+12) Calc the gain of the frame audio
   
 if it's noise:
 
@@ -37,10 +38,10 @@ Decoding/Resynthesis:
 
 if it's voiced speech:
 
-  1) Generate the pitch using whatever OSC you like (saw,pule,square e.t.c)
+  1) Generate the pitch using whatever OSC you like (saw,pule,square e.t.c) using the pitch and gain values from the encoding
   2) Apply the filter coeffcients to the new frame audio
 
 if it's noise:
 
 
-Because you now have the audio stored as a set of pitches and filter coeffcients - you can easily change the pitch and the formants for fun stuff. You can also "AUTOTUNE" the pitches so they match actual note frequencies e.t.c. You can also time-strech without changing the pitch.
+Because you now have the audio stored as a set of gains, pitches and filter coeffcients - you can easily change the pitch and the formants for fun stuff. You can also "AUTOTUNE" the pitches so they match actual note frequencies e.t.c. And you can also time-strech without changing the pitch by changing the output window size - which in turn plays back the audio frames slower.
