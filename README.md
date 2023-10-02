@@ -13,7 +13,16 @@ and it turns out - they used LPC to record and compress the audio - and then fid
 
 so I decided to write my own in Reaper JSFX - just for fun!
 
-LPC is one of those damn "Skeleton" algorithms - i.e. not much info on the core parts of the alogrithm. So I spent a few days researching and came up with the following:
+LPC is one of those damn "Skeleton" algorithms - i.e. the implementation details of the various part of the algorithms are not explained in detail. So I spent a few days researching and came up with the following:
+
+Sources found:
+[Skantar LPC Source code](https://github.com/SKantar/LPC/blob/master/LPC/LPC/main.cpp)
+[Arduino talkie playback lib](https://github.com/ArminJo/Talkie/tree/master/src)
+[C code for Levinson-Durbin recursion](http://computer-programming-forum.com/47-c-language/5944d236d7d209fa.htm)
+[Embedded Levinson-Durbin implementation](https://www.nxp.com/docs/en/application-note/AN2197.pdf)
+[Python LPC](https://www.kuniga.me/blog/2021/05/13/lpc-in-python.html)
+[LP Synth dissertation](https://core.ac.uk/download/pdf/11040755.pdf)
+[LPC all pole modelling](https://ccrma.stanford.edu/~hskim08/lpc/)
 
 Encoding:
 
