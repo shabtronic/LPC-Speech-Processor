@@ -17,6 +17,8 @@ LPC is one of those damn "Skeleton" algorithms - i.e. the implementation details
 
 Sources found:
 
+[FIPS 1015](https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub137.pdf)
+
 [LPC DSP](https://www.phon.ucl.ac.uk/courses/spsci/dsp/lpc.html)
 
 [Skantar LPC Source code](https://github.com/SKantar/LPC/blob/master/LPC/LPC/main.cpp)
